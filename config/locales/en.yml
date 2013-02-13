@@ -2,4 +2,7 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  demo_email: "Email: spree@example.com"
+  demo_email_value: "spree@example.com"
+  demo_password: "Password: spree123"
+  demo_password_value: "spree123"

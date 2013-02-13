@@ -20,12 +20,12 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 2.1.4'
 gem 'spree', '1.3.0'
 gem 'spree_auth_devise', '1.3.1'
 
 # Add Spree Active Sale plugin for flash sale/ daily deals!
-gem 'spree_active_sale' , :git => 'git://github.com/suryart/spree_active_sale.git', :branch => '1-1-0'
+gem 'spree_active_sale' , :path => '../gems/spree_active_sale' #:git => 'git://github.com/suryart/spree_active_sale.git', :branch => '1-1-0-testing'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
