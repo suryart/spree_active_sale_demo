@@ -1,4 +1,4 @@
-== [Spree Active Sale](https://github.com/suryart/spree_active_sale) Demo Application!
+== (Spree Active Sale)[https://github.com/suryart/spree_active_sale] Demo Application!
 
 Spree Active Sale plugin demo application. Currently this application uses "1-3-stable" branch of spree_active_sale's git repository. This applciation and plugin are in still in development and improvement state. So, be sure on your side before using this in production(i.e. use this on your own risk).
 
