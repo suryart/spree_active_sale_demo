@@ -1,13 +1,15 @@
 == [Spree Active Sale](https://github.com/suryart/spree_active_sale) Demo Application!
 
-Spree Active Sale plugin demo application. Currently this application uses "1-1-0" branch of spree_active_sale's git repository. This applciation and plugin are in still in development and improvement state. So, be sure on your side before using this in production(i.e. use this on your own risk).
+Spree Active Sale plugin demo application. Currently this application uses "1-3-stable" branch of spree_active_sale's git repository. This applciation and plugin are in still in development and improvement state. So, be sure on your side before using this in production(i.e. use this on your own risk).
 
 
 == How to install
 
-    bundle install
-    rails g spree:install
-    rails g spree_active_sale:install
+    $ bundle install
+
+== Admin Credentials
+	Email: spree@example.com
+	Password: spree123
 
 Contributing
 ============

@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.11'
+gem 'rails', '3.2.16'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -20,12 +20,23 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails', '~> 2.1.4'
-gem 'spree', '1.3.0'
-gem 'spree_auth_devise', '1.3.1'
+group :test do
+  gem 'factory_girl'
+end
+
+gem 'jquery-rails', '2.2.2'
+
+gem 'spree', '1.3.4'
+gem 'spree_gateway', :github => 'spree/spree_gateway', :branch => '1-3-stable'
+gem 'spree_auth_devise', :github => 'spree/spree_auth_devise', :branch => '1-3-stable'
 
 # Add Spree Active Sale plugin for flash sale/ daily deals!
-gem 'spree_active_sale' , :path => '../gems/spree_active_sale' #:git => 'git://github.com/suryart/spree_active_sale.git', :branch => '1-1-0-testing'
+# LOCAL=true bundle
+if ENV['LOCAL']
+	gem 'spree_active_sale' , :path => '../gems/spree_active_sale'
+else
+	gem 'spree_active_sale' , :git => 'git://github.com/suryart/spree_active_sale.git', :branch => '1-3-stable'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
